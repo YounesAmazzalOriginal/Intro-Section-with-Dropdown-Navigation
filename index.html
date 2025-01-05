@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <button class="close-mobile-nav" onclick="closeMobileNav()">
+        <img src="images/icon-close-menu.svg" alt="" />
+      </button>
+      <ul>
+        <a href="" class="logo">
+          <img src="images/logo.svg" alt="" />
+        </a>
+        <div class="links">
+          <li>
+            <a class="nav-title-link" onclick="openMobileLink(this)">
+              features
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <div class="menu">
+              <a href="" class="menu-link">
+                <img src="images/icon-todo.svg" alt="" />
+                <p>todo list</p>
+              </a>
+              <a href="" class="menu-link">
+                <img src="images/icon-calendar.svg" alt="" />
+                <p>calendar</p>
+              </a>
+              <a href="" class="menu-link">
+                <img src="images/icon-reminders.svg" alt="" />
+                <p>reminders</p>
+              </a>
+              <a href="" class="menu-link">
+                <img src="images/icon-planning.svg" alt="" />
+                <p>planning</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a class="nav-title-link" onclick="openMobileLink(this)">
+              company
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <div class="menu">
+              <a href="" class="menu-link">
+                <p>history</p>
+              </a>
+              <a href="" class="menu-link">
+                <p>our team</p>
+              </a>
+              <a href="" class="menu-link">
+                <p>blog</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="" class="nav-title-link">careers</a>
+          </li>
+          <li>
+            <a href="" class="nav-title-link">about</a>
+          </li>
+        </div>
+      </ul>
+      <div class="nav-btn-container">
+        <button class="bs-1">Login</button>
+        <button class="bs-2">Register</button>
+      </div>
+    </nav>
+    <div id="mobile-mobile">
+      <a href="">
+        <img src="images/logo.svg" alt="" />
+      </a>
+      <button onclick="openMobileNav()">
+        <img src="images/icon-menu.svg" alt="" />
+      </button>
+    </div>
+
+    <header>
+      <div class="text-container">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="bs-3">Learn more</button>
+        <div class="header-client-container">
+          <img src="images/client-databiz.svg" alt="databiz" />
+          <img src="images/client-audiophile.svg" alt="audiophile" />
+          <img src="images/client-meet.svg" alt="meet" />
+          <img src="images/client-maker.svg" alt="maker" />
+        </div>
+      </div>
+      <img class="my-desktop-hero" src="images/image-hero-desktop.png" alt="" />
+      <div class="my-mobile-hero-container">
+        <img class="my-mobile-hero" src="images/image-hero-mobile.png" alt="" />
+      </div>
+    </header>
+
+    <!-- Code by Younes AMAZZAL -->
+  </body>
+</html>
