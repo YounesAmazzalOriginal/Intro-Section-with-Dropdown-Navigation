@@ -15,6 +15,10 @@ body {
   --medium-weight: 500;
   --bold-weight: 700;
 }
+::selection {
+  background-color: var(--Almost-Black);
+  color: var(--Almost-White);
+}
 a {
   text-decoration: none;
   color: initial;
@@ -168,7 +172,7 @@ nav .nav-btn-container {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-inline: 200px;
 
   gap: 100px;
@@ -203,7 +207,7 @@ header .my-desktop-hero {
 .my-mobile-hero,
 .close-mobile-nav,
 #mobile-mobile,
-..my-mobile-hero-container {
+.my-mobile-hero-container {
   display: none;
 }
 /* /Elements Not Show On Desktop */
@@ -294,6 +298,7 @@ header .my-desktop-hero {
     display: none;
   }
   header .my-mobile-hero-container {
+    display: flex;
     width: 100vw;
   }
   header .my-mobile-hero-container .my-mobile-hero {
